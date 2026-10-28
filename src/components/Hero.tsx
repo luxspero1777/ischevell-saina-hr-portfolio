@@ -145,7 +145,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJobPoolModal }) => {
                 {/* Photo Element */}
                 <div className="aspect-[3/4] w-full relative overflow-hidden bg-slate-800">
                   <img
-                    src="/src/assets/images/ischevell_hr_profile_1793098562708.jpg"
+                    <img src="/src/assets/images/ischevell_hr_profile_1793098562708.jpg" alt="Ischevell Vialara Saina - Senior HR Professional" ... />
                     alt="Ischevell Vialara Saina - Senior HR Professional"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
