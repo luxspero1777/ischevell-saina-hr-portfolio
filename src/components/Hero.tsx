@@ -145,11 +145,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJobPoolModal }) => {
                 {/* Photo Element */}
                 <div className="aspect-[3/4] w-full relative overflow-hidden bg-slate-800">
                    <img 
-                      src="/ischevell_hr_profile_1793098562708.jpg" 
-                      alt="Ischevell Vialara Saina - Senior HR Professional" 
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                   />
+                     src="/WhatsApp%20Image%202026-10-28%20at%2001.07.59.jpeg" 
+                     alt="Ischevell Vialara Saina - Senior HR Professional" 
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                  />
                   
                   {/* Subtle lower gradient overlay for legibility */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80" />
