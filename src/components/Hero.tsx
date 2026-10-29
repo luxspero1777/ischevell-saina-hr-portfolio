@@ -1,6 +1,7 @@
 import React from 'react';
 import { CLIENT_PROFILE } from '../data/hrData';
 import { Briefcase, MessageSquare, Mail, Award, CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
+import { SmartImage } from './SmartImage';
 
 interface HeroProps {
   onOpenJobPoolModal: () => void;
@@ -144,10 +145,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJobPoolModal }) => {
                 
                 {/* Photo Element */}
                 <div className="aspect-[3/4] w-full relative overflow-hidden bg-slate-800">
-                   <img 
-                     src="/WhatsApp%20Image%202026-10-28%20at%2001.07.59.jpeg" 
-                     alt="Ischevell Vialara Saina - Senior HR Professional" 
-                    referrerPolicy="no-referrer"
+                  <SmartImage
+                    src={CLIENT_PROFILE.profilePhoto}
+                    filename="ischevell_hr_profile_1793098562708.jpg"
+                    alt="Ischevell Vialara Saina - Senior HR Professional"
                     className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                   />
                   

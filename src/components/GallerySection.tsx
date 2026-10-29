@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GALLERY_ITEMS } from '../data/hrData';
 import { GalleryItem } from '../types';
 import { Image, MapPin, Calendar, Sparkles, X, ZoomIn, Info, CheckCircle2 } from 'lucide-react';
+import { SmartImage } from './SmartImage';
 
 export const GallerySection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -102,10 +103,10 @@ export const GallerySection: React.FC = () => {
               <div>
                 {/* Photo Container */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
-                  <img
+                  <SmartImage
                     src={item.imageSrc}
+                    filename={item.imageFilename || 'gallery_photo.jpg'}
                     alt={item.title}
-                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-70 group-hover:opacity-50 transition-opacity" />
@@ -204,10 +205,10 @@ export const GallerySection: React.FC = () => {
 
             {/* Large Image View */}
             <div className="aspect-[16/9] w-full bg-slate-950 overflow-hidden">
-              <img
+              <SmartImage
                 src={activeLightboxItem.imageSrc}
+                filename={activeLightboxItem.imageFilename || 'gallery_photo.jpg'}
                 alt={activeLightboxItem.title}
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
             </div>

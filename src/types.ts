@@ -13,6 +13,7 @@ export interface ExperienceItem {
   skillsApplied: string[];
   photo?: string;
   photoCaption?: string;
+  photoFilename?: string;
 }
 
 export interface GalleryItem {
@@ -23,6 +24,7 @@ export interface GalleryItem {
   date: string;
   location: string;
   imageSrc: string;
+  imageFilename?: string;
   description: string;
   highlight: string;
 }

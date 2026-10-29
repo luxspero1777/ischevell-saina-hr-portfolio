@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { CAREER_EXPERIENCES } from '../data/hrData';
 import { Briefcase, Building2, MapPin, Calendar, ChevronDown, ChevronUp, CheckCircle, Sparkles, ZoomIn, X, Camera } from 'lucide-react';
 import { ExperienceItem } from '../types';
+import { SmartImage } from './SmartImage';
 
 export const ExperienceTimeline: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [expandedId, setExpandedId] = useState<string>('exp-1'); // Default expand the latest Head HR position
-  const [activePhoto, setActivePhoto] = useState<{ src: string; caption: string; role: string; company: string } | null>(null);
+  const [activePhoto, setActivePhoto] = useState<{ src: string; caption: string; role: string; company: string; filename?: string } | null>(null);
 
   const filteredExperiences = selectedCategory === 'all'
     ? CAREER_EXPERIENCES
@@ -203,15 +204,16 @@ export const ExperienceTimeline: React.FC = () => {
                               src: exp.photo!,
                               caption: exp.photoCaption || `Dokumentasi Momen ${exp.role} di ${exp.company}`,
                               role: exp.role,
-                              company: exp.company
+                              company: exp.company,
+                              filename: exp.photoFilename
                             })}
                             className="group/photo cursor-pointer rounded-xl overflow-hidden border border-slate-700/80 hover:border-amber-400/50 bg-slate-950 transition-all shadow-md"
                           >
                             <div className="aspect-[16/9] sm:aspect-[21/9] w-full relative overflow-hidden bg-slate-900">
-                              <img
+                              <SmartImage
                                 src={exp.photo}
+                                filename={exp.photoFilename || 'experience_photo.jpg'}
                                 alt={exp.photoCaption || exp.role}
-                                referrerPolicy="no-referrer"
                                 className="w-full h-full object-cover group-hover/photo:scale-105 transition-transform duration-500"
                               />
                               <div className="absolute inset-0 bg-slate-950/20 group-hover/photo:bg-slate-950/40 transition-colors flex items-center justify-center">
@@ -303,10 +305,10 @@ export const ExperienceTimeline: React.FC = () => {
             </div>
 
             <div className="aspect-[16/9] w-full bg-slate-950 overflow-hidden">
-              <img
+              <SmartImage
                 src={activePhoto.src}
+                filename={activePhoto.filename || 'experience_photo.jpg'}
                 alt={activePhoto.caption}
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
             </div>

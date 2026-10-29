@@ -54,6 +54,28 @@ export const generateStandaloneHtml = (): string => {
       border-radius: 3px;
     }
   </style>
+
+  <script>
+    function handleImgError(el, filename, title, subtitle) {
+      if (!el.dataset.attempt) {
+        el.dataset.attempt = '1';
+        el.src = './images/' + filename;
+      } else if (el.dataset.attempt === '1') {
+        el.dataset.attempt = '2';
+        el.src = './public/images/' + filename;
+      } else if (el.dataset.attempt === '2') {
+        el.dataset.attempt = '3';
+        el.src = './assets/' + filename;
+      } else if (el.dataset.attempt === '3') {
+        el.dataset.attempt = '4';
+        el.src = './src/assets/images/' + filename;
+      } else {
+        var t = encodeURIComponent(title || 'Dokumentasi HR');
+        var s = encodeURIComponent(subtitle || 'Ischevell Saina');
+        el.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500' width='100%' height='100%'><defs><linearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%230b1329'/><stop offset='100%25' stop-color='%23142042'/></linearGradient></defs><rect width='800' height='500' fill='url(%23bg)'/><rect x='20' y='20' width='760' height='460' rx='16' fill='none' stroke='%23f59e0b' stroke-width='1.5' stroke-dasharray='8 8' stroke-opacity='0.4'/><circle cx='400' cy='200' r='50' fill='%23070c18' stroke='%23f59e0b' stroke-width='2'/><path d='M384 220v-4a8 8 0 0 1 8-8h16a8 8 0 0 1 8 8v4M400 185a8 8 0 1 0 0-16 8 8 0 0 0 0 16z' stroke='%23facc15' stroke-width='3' fill='none'/><text x='400' y='300' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23ffffff' text-anchor='middle'>" + t + "</text><text x='400' y='335' font-family='sans-serif' font-size='14' fill='%2394a3b8' text-anchor='middle'>" + s + "</text><rect x='300' y='375' width='200' height='36' rx='8' fill='%231e293b'/><text x='400' y='398' font-family='sans-serif' font-size='12' font-weight='bold' fill='%23facc15' text-anchor='middle'>ISCHEVELL SAINA | HR</text></svg>";
+      }
+    }
+  </script>
 </head>
 <body class="bg-[#070c18] text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950">
 
@@ -182,7 +204,8 @@ export const generateStandaloneHtml = (): string => {
         <div class="lg:col-span-5 flex justify-center lg:justify-end">
           <div class="relative w-full max-w-sm rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 shadow-2xl">
             <img 
-              src="/src/assets/images/ischevell_hr_profile_1793098562708.jpg" 
+              src="./images/ischevell_hr_profile_1793098562708.jpg"
+              onerror="handleImgError(this, 'ischevell_hr_profile_1793098562708.jpg', 'Ischevell Vialara Saina', 'Head of Human Resources')"
               alt="Ischevell Vialara Saina - HR Professional"
               class="w-full h-auto object-cover object-top"
             />
@@ -287,7 +310,7 @@ export const generateStandaloneHtml = (): string => {
               Manpower planning untuk 8 properti hotel serentak, perumusan policies & SOP korporat, HR budgeting tahunan, end-to-end recruitment level manager-level, serta employee relations & union communications.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/gallery_hotel_meeting_1793125770383.jpg" alt="Dokumentasi Head HR Prima Hotel" class="w-full h-44 object-cover">
+              <img src="./images/gallery_hotel_meeting_1793125770383.jpg" onerror="handleImgError(this, 'gallery_hotel_meeting_1793125770383.jpg', 'Rapat Koordinasi 8 Properti', 'Manpower Planning')" alt="Dokumentasi Head HR Prima Hotel" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Rapat Koordinasi Strategis & Evaluasi Manpower 8 Properti Hotel</div>
             </div>
           </div>
@@ -307,7 +330,7 @@ export const generateStandaloneHtml = (): string => {
               Perekrutan personel ritel, administrasi personalia, compensation & benefits (C&B), pelaporan kepesertaan BPJS Ketenagakerjaan & Kesehatan, General Affairs, dan peningkatan employee engagement.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/gallery_training_session_1793125786457.jpg" alt="Dokumentasi Mitra10 HR" class="w-full h-44 object-cover">
+              <img src="./images/gallery_training_session_1793125786457.jpg" onerror="handleImgError(this, 'gallery_training_session_1793125786457.jpg', 'Training Gerai Ritel', 'Employee Engagement')" alt="Dokumentasi Mitra10 HR" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Sesi Training Onboarding & Employee Engagement Gerai Ritel</div>
             </div>
           </div>
@@ -327,7 +350,7 @@ export const generateStandaloneHtml = (): string => {
               Membuat struktur organisasi dan uraian jabatan terpadu, rencana keuangan ketenagakerjaan, memastikan legalitas hukum HR, dan standardisasi kedisiplinan operasional pabrik.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/exp_kelapa_jaya_factory_1793131310551.jpg" alt="Dokumentasi Manufaktur Kelapa" class="w-full h-44 object-cover">
+              <img src="./images/exp_kelapa_jaya_factory_1793131310551.jpg" onerror="handleImgError(this, 'exp_kelapa_jaya_factory_1793131310551.jpg', 'Pabrik Agro Manufaktur', 'Legalitas Ketenagakerjaan')" alt="Dokumentasi Manufaktur Kelapa" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Standardisasi Struktur & Operasional Manufaktur Agro Kelapa</div>
             </div>
           </div>
@@ -347,7 +370,7 @@ export const generateStandaloneHtml = (): string => {
               Mengelola operasional harian kedai kopi, rantai pasok F&B, perencanaan arus kas keuangan, serta rekrutmen dan supervisi staf layanan.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/exp_coffee_shop_owner_1793131331204.jpg" alt="Dokumentasi Rumah Kopi Aerie" class="w-full h-44 object-cover">
+              <img src="./images/exp_coffee_shop_owner_1793131331204.jpg" onerror="handleImgError(this, 'exp_coffee_shop_owner_1793131331204.jpg', 'Rumah Kopi Aerie', 'Operasional & Bisnis')" alt="Dokumentasi Rumah Kopi Aerie" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Operasional Bisnis & Tim Barista Rumah Kopi Aerie</div>
             </div>
           </div>
@@ -367,7 +390,7 @@ export const generateStandaloneHtml = (): string => {
               Rekrutmen massal pembukaan gerai baru (new store opening), operasional HRIS (Hc plus, People Pro), penanganan hubungan industrial, serta koordinasi kemitraan vendor & instansi pemerintah.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/gallery_retail_store_team_1793125800576.jpg" alt="Dokumentasi Kawan Lama Retail" class="w-full h-44 object-cover">
+              <img src="./images/gallery_retail_store_team_1793125800576.jpg" onerror="handleImgError(this, 'gallery_retail_store_team_1793125800576.jpg', 'New Store Opening Ritel', 'Mass Recruitment Tim')" alt="Dokumentasi Kawan Lama Retail" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Formasi & Briefing Pembukaan Toko Baru (New Store Opening)</div>
             </div>
           </div>
@@ -387,7 +410,7 @@ export const generateStandaloneHtml = (): string => {
               Manpower planning perhotelan, perhitungan payroll & service charge, administrasi BPJS, perumusan Employee Policy Manual, penyelenggaraan employee events, dan audit kepatuhan Best Western QA.
             </p>
             <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="/src/assets/images/regenerated_image_1793166686205.jpg" alt="Dokumentasi Best Western Hotel" class="w-full h-44 object-cover">
+              <img src="./images/regenerated_image_1793166686205.jpg" onerror="handleImgError(this, 'regenerated_image_1793166686205.jpg', 'Best Western QA', 'Pencapaian Audit Mutu')" alt="Dokumentasi Best Western Hotel" class="w-full h-44 object-cover">
               <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Pencapaian Audit Kepatuhan Best Western Quality Assurance</div>
             </div>
           </div>
@@ -401,11 +424,11 @@ export const generateStandaloneHtml = (): string => {
             <div class="text-xs text-slate-300 space-y-1">
               <p>• <strong>Freelancer Data Analyst Alfamart (2016):</strong> Analisis kuantitatif data penjualan dan inventaris gerai ritel.</p>
               <div class="my-2 rounded-lg overflow-hidden border border-slate-700/80">
-                <img src="/src/assets/images/exp_data_analyst_retail_1793131352140.jpg" alt="Dokumentasi Data Analyst" class="w-full h-36 object-cover">
+                <img src="./images/exp_data_analyst_retail_1793131352140.jpg" onerror="handleImgError(this, 'exp_data_analyst_retail_1793131352140.jpg', 'Data Analyst Alfamart', 'Pemodelan Penjualan Ritel')" alt="Dokumentasi Data Analyst" class="w-full h-36 object-cover">
               </div>
               <p class="pt-2">• <strong>F&B Secretary Lion Hotel & Plaza (2013 - 2014):</strong> Kesekretariatan F&B, banquet event orders, dan korespondensi perhotelan.</p>
               <div class="my-2 rounded-lg overflow-hidden border border-slate-700/80">
-                <img src="/src/assets/images/exp_hotel_fb_secretary_1793131369162.jpg" alt="Dokumentasi F&B Secretary" class="w-full h-36 object-cover">
+                <img src="./images/exp_hotel_fb_secretary_1793131369162.jpg" onerror="handleImgError(this, 'exp_hotel_fb_secretary_1793131369162.jpg', 'F&B Secretary Lion Hotel', 'BEO & Kesekretariatan')" alt="Dokumentasi F&B Secretary" class="w-full h-36 object-cover">
               </div>
             </div>
           </div>
@@ -584,7 +607,7 @@ export const generateStandaloneHtml = (): string => {
         <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
           <div>
             <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="/src/assets/images/gallery_hotel_meeting_1793125770383.jpg" alt="Rapat Koordinasi 8 Properti Hotel" class="w-full h-full object-cover">
+              <img src="./images/gallery_hotel_meeting_1793125770383.jpg" onerror="handleImgError(this, 'gallery_hotel_meeting_1793125770383.jpg', 'Rapat Koordinasi 8 Properti', 'Manpower Planning')" alt="Rapat Koordinasi 8 Properti Hotel" class="w-full h-full object-cover">
               <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Multi-Properti Hotel</span>
             </div>
             <div class="p-6">
@@ -604,7 +627,7 @@ export const generateStandaloneHtml = (): string => {
         <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
           <div>
             <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="/src/assets/images/gallery_training_session_1793125786457.jpg" alt="Workshop & Employee Engagement" class="w-full h-full object-cover">
+              <img src="./images/gallery_training_session_1793125786457.jpg" onerror="handleImgError(this, 'gallery_training_session_1793125786457.jpg', 'Training Gerai Ritel', 'Employee Engagement')" alt="Workshop & Employee Engagement" class="w-full h-full object-cover">
               <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Pelatihan & Workshop</span>
             </div>
             <div class="p-6">
@@ -624,7 +647,7 @@ export const generateStandaloneHtml = (): string => {
         <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
           <div>
             <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="/src/assets/images/gallery_retail_store_team_1793125800576.jpg" alt="New Store Opening Ritel" class="w-full h-full object-cover">
+              <img src="./images/gallery_retail_store_team_1793125800576.jpg" onerror="handleImgError(this, 'gallery_retail_store_team_1793125800576.jpg', 'New Store Opening Ritel', 'Mass Recruitment Tim')" alt="New Store Opening Ritel" class="w-full h-full object-cover">
               <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Ritel & Store Opening</span>
             </div>
             <div class="p-6">
@@ -644,7 +667,7 @@ export const generateStandaloneHtml = (): string => {
         <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
           <div>
             <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="/src/assets/images/regenerated_image_1793166686205.jpg" alt="Pencapaian Best Western QA" class="w-full h-full object-cover">
+              <img src="./images/regenerated_image_1793166686205.jpg" onerror="handleImgError(this, 'regenerated_image_1793166686205.jpg', 'Best Western QA', 'Pencapaian Audit Mutu')" alt="Pencapaian Best Western QA" class="w-full h-full object-cover">
               <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Penghargaan & QA</span>
             </div>
             <div class="p-6">
