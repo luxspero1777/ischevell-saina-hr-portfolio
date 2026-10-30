@@ -1,4 +1,4 @@
-import { ExperienceItem, JobPosting, SkillCategory, GalleryItem } from '../types';
+import { ExperienceItem, JobPosting, SkillCategory } from '../types';
 import { APP_IMAGES } from './assets';
 
 export const CLIENT_PROFILE = {
@@ -25,57 +25,6 @@ export const CLIENT_PROFILE = {
   ]
 };
 
-export const GALLERY_ITEMS: GalleryItem[] = [
-  {
-    id: 'gal-1',
-    title: 'Rapat Koordinasi Strategis & Manpower Planning 8 Properti Hotel',
-    category: 'Multi-Properti Hotel',
-    categoryKey: 'hotel',
-    date: '2024 - 2026',
-    location: 'Jakarta & Jaringan Properti',
-    imageSrc: APP_IMAGES.hotelMeeting,
-    imageFilename: 'gallery_hotel_meeting_1793125770383.jpg',
-    description: 'Sesi evaluasi bulanan bersama General Manager dan Head of Departments (HOD) untuk standardisasi SOP operasional, pengendalian anggaran belanja SDM (HR Budgeting), dan perencanaan formasi tenaga kerja perhotelan.',
-    highlight: 'Standardisasi SOP 8 Properti & Efisiensi Cost per Hire'
-  },
-  {
-    id: 'gal-2',
-    title: 'Workshop & Pelatihan Employee Engagement Berkelanjutan',
-    category: 'Pelatihan & Workshop',
-    categoryKey: 'training',
-    date: '2024',
-    location: 'Training Hall & Corporate Office',
-    imageSrc: APP_IMAGES.trainingSession,
-    imageFilename: 'gallery_training_session_1793125786457.jpg',
-    description: 'Pemberian materi kepemimpinan dasar, budaya layanan prima, serta pengenalan regulasi hak dan kewajiban kerja guna membangun iklim organisasi yang sehat, termotivasi, dan harmonis.',
-    highlight: 'Peningkatan Retensi Staf & Komunikasi Terbuka'
-  },
-  {
-    id: 'gal-3',
-    title: 'Persiapan Tim & Briefing Peresmian Gerai Baru Ritel Modern',
-    category: 'Ritel & Store Opening',
-    categoryKey: 'retail',
-    date: '2019 - 2024',
-    location: 'Jabodetabek & Manado',
-    imageSrc: APP_IMAGES.retailStore,
-    imageFilename: 'gallery_retail_store_team_1793125800576.jpg',
-    description: 'Momen pengarahan serentak (morning huddle) bersama staf dan supervisor gerai ritel modern pasca proses mass recruitment, memastikan kesiapan layanan konsumen dan penataan display toko.',
-    highlight: 'Pemenuhan Kuota Mass Hiring 100% On-Time'
-  },
-  {
-    id: 'gal-4',
-    title: 'Pencapaian Audit Best Western Quality Assurance (QA)',
-    category: 'Penghargaan & QA',
-    categoryKey: 'award',
-    date: '2016 - 2018',
-    location: 'Best Western the Lagoon Hotel Manado',
-    imageSrc: APP_IMAGES.hotelAward,
-    imageFilename: 'regenerated_image_1793166686205.jpg',
-    description: 'Dokumentasi perayaan keberhasilan tim manajemen hotel dalam meraih sertifikasi kepatuhan standar mutu internasional Best Western QA untuk tata kelola operasional dan kedisiplinan SDM.',
-    highlight: 'Audit Kepatuhan Mutu & Standar Karyawan Internasional'
-  }
-];
-
 export const CAREER_EXPERIENCES: ExperienceItem[] = [
   {
     id: 'exp-1',
@@ -95,10 +44,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Memimpin rekrutmen end-to-end level Managerial (General Manager, Hotel Manager, HOD) dengan ketepatan onboarding 95%.',
       'Mengelola Employee Relations & mediasi komunikasi serikat pekerja (Union Communications) secara harmonis dan zero dispute.'
     ],
-    skillsApplied: ['Strategic HR Planning', 'HR Budgeting', 'Policy & SOP Formulation', 'Managerial Recruitment', 'Industrial Relations', 'Union Relations'],
-    photo: APP_IMAGES.hotelMeeting,
-    photoFilename: 'gallery_hotel_meeting_1793125770383.jpg',
-    photoCaption: 'Dokumentasi Rapat Koordinasi Strategis & Evaluasi Manpower 8 Properti Hotel'
+    skillsApplied: ['Strategic HR Planning', 'HR Budgeting', 'Policy & SOP Formulation', 'Managerial Recruitment', 'Industrial Relations', 'Union Relations']
   },
   {
     id: 'exp-2',
@@ -117,10 +63,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Mengkoordinasikan kebutuhan General Affairs (GA), fasilitas gerai ritel, dan inventaris operasional kerja.',
       'Menginisiasi program Employee Engagement bulanan yang meningkatkan retensi staf toko sebesar 15%.'
     ],
-    skillsApplied: ['Retail Recruitment', 'C&B Management', 'BPJS Kesehatan/Ketenagakerjaan', 'General Affairs', 'Employee Engagement'],
-    photo: APP_IMAGES.trainingSession,
-    photoFilename: 'gallery_training_session_1793125786457.jpg',
-    photoCaption: 'Sesi Training Onboarding & Employee Engagement Gerai Ritel Modern'
+    skillsApplied: ['Retail Recruitment', 'C&B Management', 'BPJS Kesehatan/Ketenagakerjaan', 'General Affairs', 'Employee Engagement']
   },
   {
     id: 'exp-3',
@@ -139,10 +82,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Memastikan seluruh legalitas ketenagakerjaan, izin kerja, PKWT/PKWTT, dan sistem K3 operasional pabrik terpenuhi.',
       'Membangun sistem absensi dan kedisiplinan kerja pabrik dengan penurunan angka ketidakhadiran sebesar 22%.'
     ],
-    skillsApplied: ['Organizational Design', 'Job Analysis', 'Labor Law Compliance', 'Manufacturing HR', 'Budget Formulation'],
-    photo: APP_IMAGES.kelapaJayaFactory,
-    photoFilename: 'exp_kelapa_jaya_factory_1793131310551.jpg',
-    photoCaption: 'Dokumentasi Standardisasi Struktur & Operasional Manufaktur Agro Kelapa'
+    skillsApplied: ['Organizational Design', 'Job Analysis', 'Labor Law Compliance', 'Manufacturing HR', 'Budget Formulation']
   },
   {
     id: 'exp-4',
@@ -160,10 +100,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Melakukan rekrutmen, pelatihan hospitality barista, penyusunan jadwal kerja shift, dan evaluasi performa mingguan staf.',
       'Mengontrol arus kas (Cashflow), margin laba kotor, dan strategi pemasaran lokal berbasis komunitas.'
     ],
-    skillsApplied: ['Entrepreneurship', 'F&B Operations', 'Cash Flow Management', 'Team Leadership', 'Customer Experience'],
-    photo: APP_IMAGES.coffeeShopOwner,
-    photoFilename: 'exp_coffee_shop_owner_1793131331204.jpg',
-    photoCaption: 'Dokumentasi Operasional Bisnis & Kepemimpinan Tim Barista Rumah Kopi Aerie'
+    skillsApplied: ['Entrepreneurship', 'F&B Operations', 'Cash Flow Management', 'Team Leadership', 'Customer Experience']
   },
   {
     id: 'exp-5',
@@ -182,10 +119,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Menangani mediasi hubungan industrial internal dan eksternal, menjalin komunikasi aktif dengan Disnaker Kota Manado.',
       'Mengelola hubungan kerja sama dengan vendor outsourcing security, cleaning service, dan penyedia tenaga kerja alih daya.'
     ],
-    skillsApplied: ['Mass Recruitment', 'HRIS (People Pro, Hc plus)', 'New Store Opening', 'Government Relations', 'Vendor Management'],
-    photo: APP_IMAGES.retailStore,
-    photoFilename: 'gallery_retail_store_team_1793125800576.jpg',
-    photoCaption: 'Dokumentasi Tim & Formasi Pembukaan Gerai Baru (New Store Opening)'
+    skillsApplied: ['Mass Recruitment', 'HRIS (People Pro, Hc plus)', 'New Store Opening', 'Government Relations', 'Vendor Management']
   },
   {
     id: 'exp-6',
@@ -204,10 +138,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Mengkoordinasikan kepesertaan BPJS dan audit kepatuhan Best Western Quality Assurance (QA).',
       'Merancang agenda Employee Recognition, gathering tahunan, dan program pelatihan hospitality service culture.'
     ],
-    skillsApplied: ['Hotel HR Management', 'Payroll & Service Charge', 'Policy Manual Formulation', 'Quality Assurance Audit', 'Employee Welfare'],
-    photo: APP_IMAGES.hotelAward,
-    photoFilename: 'regenerated_image_1793166686205.jpg',
-    photoCaption: 'Momen Perayaan Pencapaian Audit Kepatuhan Best Western Quality Assurance'
+    skillsApplied: ['Hotel HR Management', 'Payroll & Service Charge', 'Policy Manual Formulation', 'Quality Assurance Audit', 'Employee Welfare']
   },
   {
     id: 'exp-7',
@@ -224,10 +155,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Mengolah ribuan baris data penjualan toko menjadi visualisasi tren yang mudah dieksekusi oleh tim manajerial.',
       'Mengidentifikasi anomali data inventaris stok dengan ketelitian tinggi.'
     ],
-    skillsApplied: ['Data Analytics', 'Excel Advanced Modeling', 'Trend Analysis', 'Inventory Reconciliation'],
-    photo: APP_IMAGES.dataAnalyst,
-    photoFilename: 'exp_data_analyst_retail_1793131352140.jpg',
-    photoCaption: 'Dokumentasi Pengolahan Data Kuantitatif & Pemodelan Analitik Penjualan Ritel'
+    skillsApplied: ['Data Analytics', 'Excel Advanced Modeling', 'Trend Analysis', 'Inventory Reconciliation']
   },
   {
     id: 'exp-8',
@@ -244,10 +172,7 @@ export const CAREER_EXPERIENCES: ExperienceItem[] = [
       'Menerima penghargaan Be Ultimate Assistant atas kecepatan respons dan presisi korespondensi.',
       'Mendokumentasikan ratusan Banquet Event Orders (BEO) untuk acara korporat dan kenegaraan.'
     ],
-    skillsApplied: ['Executive Secretarial', 'Hospitality Coordination', 'BEO Management', 'Document Filing'],
-    photo: APP_IMAGES.hotelFbSecretary,
-    photoFilename: 'exp_hotel_fb_secretary_1793131369162.jpg',
-    photoCaption: 'Dokumentasi Kesekretariatan F&B, Koordinasi BEO & Layanan Perhotelan'
+    skillsApplied: ['Executive Secretarial', 'Hospitality Coordination', 'BEO Management', 'Document Filing']
   }
 ];
 

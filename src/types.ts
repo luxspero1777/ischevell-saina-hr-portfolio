@@ -11,22 +11,6 @@ export interface ExperienceItem {
   description: string;
   keyAchievements: string[];
   skillsApplied: string[];
-  photo?: string;
-  photoCaption?: string;
-  photoFilename?: string;
-}
-
-export interface GalleryItem {
-  id: string;
-  title: string;
-  category: 'Multi-Properti Hotel' | 'Pelatihan & Workshop' | 'Ritel & Store Opening' | 'Penghargaan & QA';
-  categoryKey: 'hotel' | 'training' | 'retail' | 'award';
-  date: string;
-  location: string;
-  imageSrc: string;
-  imageFilename?: string;
-  description: string;
-  highlight: string;
 }
 
 export interface SkillCategory {

@@ -105,7 +105,6 @@ export const generateStandaloneHtml = (): string => {
           <a href="#tentang" class="hover:text-amber-400 transition-colors py-1">Tentang Saya</a>
           <a href="#pengalaman" class="hover:text-amber-400 transition-colors py-1">Pengalaman</a>
           <a href="#keahlian" class="hover:text-amber-400 transition-colors py-1">Keahlian</a>
-          <a href="#galeri" class="hover:text-amber-400 transition-colors py-1">Galeri Momen</a>
           <a href="#lowongan" class="hover:text-amber-400 transition-colors py-1">Lowongan Kerja</a>
           <a href="#kontak" class="hover:text-amber-400 transition-colors py-1">Kontak</a>
         </nav>
@@ -132,7 +131,6 @@ export const generateStandaloneHtml = (): string => {
       <a href="#tentang" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Tentang Saya</a>
       <a href="#pengalaman" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Pengalaman</a>
       <a href="#keahlian" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Keahlian</a>
-      <a href="#galeri" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Galeri Momen</a>
       <a href="#lowongan" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Lowongan Kerja</a>
       <a href="#kontak" class="block px-3 py-2 text-sm text-slate-200 hover:text-amber-400">Kontak</a>
     </div>
@@ -309,10 +307,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Manpower planning untuk 8 properti hotel serentak, perumusan policies & SOP korporat, HR budgeting tahunan, end-to-end recruitment level manager-level, serta employee relations & union communications.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/gallery_hotel_meeting_1793125770383.jpg" onerror="handleImgError(this, 'gallery_hotel_meeting_1793125770383.jpg', 'Rapat Koordinasi 8 Properti', 'Manpower Planning')" alt="Dokumentasi Head HR Prima Hotel" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Rapat Koordinasi Strategis & Evaluasi Manpower 8 Properti Hotel</div>
-            </div>
           </div>
         </div>
 
@@ -329,10 +323,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Perekrutan personel ritel, administrasi personalia, compensation & benefits (C&B), pelaporan kepesertaan BPJS Ketenagakerjaan & Kesehatan, General Affairs, dan peningkatan employee engagement.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/gallery_training_session_1793125786457.jpg" onerror="handleImgError(this, 'gallery_training_session_1793125786457.jpg', 'Training Gerai Ritel', 'Employee Engagement')" alt="Dokumentasi Mitra10 HR" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Sesi Training Onboarding & Employee Engagement Gerai Ritel</div>
-            </div>
           </div>
         </div>
 
@@ -349,10 +339,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Membuat struktur organisasi dan uraian jabatan terpadu, rencana keuangan ketenagakerjaan, memastikan legalitas hukum HR, dan standardisasi kedisiplinan operasional pabrik.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/exp_kelapa_jaya_factory_1793131310551.jpg" onerror="handleImgError(this, 'exp_kelapa_jaya_factory_1793131310551.jpg', 'Pabrik Agro Manufaktur', 'Legalitas Ketenagakerjaan')" alt="Dokumentasi Manufaktur Kelapa" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Standardisasi Struktur & Operasional Manufaktur Agro Kelapa</div>
-            </div>
           </div>
         </div>
 
@@ -369,10 +355,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Mengelola operasional harian kedai kopi, rantai pasok F&B, perencanaan arus kas keuangan, serta rekrutmen dan supervisi staf layanan.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/exp_coffee_shop_owner_1793131331204.jpg" onerror="handleImgError(this, 'exp_coffee_shop_owner_1793131331204.jpg', 'Rumah Kopi Aerie', 'Operasional & Bisnis')" alt="Dokumentasi Rumah Kopi Aerie" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Operasional Bisnis & Tim Barista Rumah Kopi Aerie</div>
-            </div>
           </div>
         </div>
 
@@ -389,10 +371,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Rekrutmen massal pembukaan gerai baru (new store opening), operasional HRIS (Hc plus, People Pro), penanganan hubungan industrial, serta koordinasi kemitraan vendor & instansi pemerintah.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/gallery_retail_store_team_1793125800576.jpg" onerror="handleImgError(this, 'gallery_retail_store_team_1793125800576.jpg', 'New Store Opening Ritel', 'Mass Recruitment Tim')" alt="Dokumentasi Kawan Lama Retail" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Formasi & Briefing Pembukaan Toko Baru (New Store Opening)</div>
-            </div>
           </div>
         </div>
 
@@ -409,10 +387,6 @@ export const generateStandaloneHtml = (): string => {
             <p class="text-xs text-slate-400 mt-2 leading-relaxed">
               Manpower planning perhotelan, perhitungan payroll & service charge, administrasi BPJS, perumusan Employee Policy Manual, penyelenggaraan employee events, dan audit kepatuhan Best Western QA.
             </p>
-            <div class="mt-3 rounded-lg overflow-hidden border border-slate-700/80">
-              <img src="./images/regenerated_image_1793166686205.jpg" onerror="handleImgError(this, 'regenerated_image_1793166686205.jpg', 'Best Western QA', 'Pencapaian Audit Mutu')" alt="Dokumentasi Best Western Hotel" class="w-full h-44 object-cover">
-              <div class="p-2 bg-slate-950 text-[11px] text-slate-300">📸 Pencapaian Audit Kepatuhan Best Western Quality Assurance</div>
-            </div>
           </div>
         </div>
 
@@ -423,13 +397,7 @@ export const generateStandaloneHtml = (): string => {
             <div class="text-xs text-amber-400 font-bold mb-1">2013 - 2016 · Pengalaman Pendukung</div>
             <div class="text-xs text-slate-300 space-y-1">
               <p>• <strong>Freelancer Data Analyst Alfamart (2016):</strong> Analisis kuantitatif data penjualan dan inventaris gerai ritel.</p>
-              <div class="my-2 rounded-lg overflow-hidden border border-slate-700/80">
-                <img src="./images/exp_data_analyst_retail_1793131352140.jpg" onerror="handleImgError(this, 'exp_data_analyst_retail_1793131352140.jpg', 'Data Analyst Alfamart', 'Pemodelan Penjualan Ritel')" alt="Dokumentasi Data Analyst" class="w-full h-36 object-cover">
-              </div>
               <p class="pt-2">• <strong>F&B Secretary Lion Hotel & Plaza (2013 - 2014):</strong> Kesekretariatan F&B, banquet event orders, dan korespondensi perhotelan.</p>
-              <div class="my-2 rounded-lg overflow-hidden border border-slate-700/80">
-                <img src="./images/exp_hotel_fb_secretary_1793131369162.jpg" onerror="handleImgError(this, 'exp_hotel_fb_secretary_1793131369162.jpg', 'F&B Secretary Lion Hotel', 'BEO & Kesekretariatan')" alt="Dokumentasi F&B Secretary" class="w-full h-36 object-cover">
-              </div>
             </div>
           </div>
         </div>
@@ -588,110 +556,7 @@ export const generateStandaloneHtml = (): string => {
     </div>
   </section>
 
-  <!-- ==================== 7. GALERI KEGIATAN & MOMEN BERKESAN ==================== -->
-  <section id="galeri" class="py-16 bg-slate-900/60 border-b border-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="max-w-3xl mb-12">
-        <div class="text-xs font-semibold text-amber-400 uppercase tracking-widest mb-2">Dokumentasi & Portofolio Momen</div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-          Galeri Kegiatan & Momen Berkesan
-        </h2>
-        <p class="mt-3 text-sm text-slate-300 leading-relaxed">
-          Dokumentasi rekam jejak kepemimpinan HR, rapat evaluasi multi-properti, pelatihan karyawan, dan pencapaian mutu organisasi.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Item 1 -->
-        <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="./images/gallery_hotel_meeting_1793125770383.jpg" onerror="handleImgError(this, 'gallery_hotel_meeting_1793125770383.jpg', 'Rapat Koordinasi 8 Properti', 'Manpower Planning')" alt="Rapat Koordinasi 8 Properti Hotel" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Multi-Properti Hotel</span>
-            </div>
-            <div class="p-6">
-              <div class="text-xs text-amber-400 font-semibold mb-1">2024 - 2026 · Jakarta</div>
-              <h3 class="text-lg font-bold text-white">Rapat Koordinasi Strategis & Manpower Planning</h3>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Evaluasi bulanan bersama General Manager dan HOD untuk standardisasi SOP operasional dan pengendalian anggaran HR Budgeting pada 8 properti hotel serentak.
-              </p>
-            </div>
-          </div>
-          <div class="px-6 py-3 bg-slate-900/50 border-t border-slate-800 text-[11px] text-slate-400">
-            Standardisasi SOP & Manpower Planning Multi-Unit
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="./images/gallery_training_session_1793125786457.jpg" onerror="handleImgError(this, 'gallery_training_session_1793125786457.jpg', 'Training Gerai Ritel', 'Employee Engagement')" alt="Workshop & Employee Engagement" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Pelatihan & Workshop</span>
-            </div>
-            <div class="p-6">
-              <div class="text-xs text-amber-400 font-semibold mb-1">2024 · Training Hall</div>
-              <h3 class="text-lg font-bold text-white">Workshop & Pelatihan Employee Engagement</h3>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Pemberian materi kepemimpinan dasar, budaya layanan prima, serta edukasi hak dan kewajiban kerja guna membangun iklim organisasi yang sehat dan termotivasi.
-              </p>
-            </div>
-          </div>
-          <div class="px-6 py-3 bg-slate-900/50 border-t border-slate-800 text-[11px] text-slate-400">
-            Peningkatan Retensi Staf & Komunikasi Terbuka
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="./images/gallery_retail_store_team_1793125800576.jpg" onerror="handleImgError(this, 'gallery_retail_store_team_1793125800576.jpg', 'New Store Opening Ritel', 'Mass Recruitment Tim')" alt="New Store Opening Ritel" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Ritel & Store Opening</span>
-            </div>
-            <div class="p-6">
-              <div class="text-xs text-amber-400 font-semibold mb-1">2019 - 2024 · Jabodetabek & Manado</div>
-              <h3 class="text-lg font-bold text-white">Persiapan Tim & Briefing Peresmian Gerai Baru</h3>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Momen briefing harian bersama staf dan supervisor gerai ritel modern pasca proses mass hiring, memastikan kesiapan layanan dan penataan merchandising toko.
-              </p>
-            </div>
-          </div>
-          <div class="px-6 py-3 bg-slate-900/50 border-t border-slate-800 text-[11px] text-slate-400">
-            Pemenuhan Formasi Gerai Ritel 100% Tepat Waktu
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/9] w-full bg-slate-900 overflow-hidden relative">
-              <img src="./images/regenerated_image_1793166686205.jpg" onerror="handleImgError(this, 'regenerated_image_1793166686205.jpg', 'Best Western QA', 'Pencapaian Audit Mutu')" alt="Pencapaian Best Western QA" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 text-[11px] font-semibold text-amber-300 bg-slate-950/80 px-2.5 py-1 rounded">Penghargaan & QA</span>
-            </div>
-            <div class="p-6">
-              <div class="text-xs text-amber-400 font-semibold mb-1">2016 - 2018 · Hotel Bintang 4 Manado</div>
-              <h3 class="text-lg font-bold text-white">Pencapaian Audit Best Western Quality Assurance</h3>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Dokumentasi perayaan keberhasilan tim manajemen hotel dalam meraih sertifikasi kepatuhan standar internasional Best Western QA untuk tata kelola mutu dan kedisiplinan kerja SDM.
-              </p>
-            </div>
-          </div>
-          <div class="px-6 py-3 bg-slate-900/50 border-t border-slate-800 text-[11px] text-slate-400">
-            Kepatuhan Standar Perhotelan Internasional
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-8 p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-400">
-        💡 <strong>Catatan Klien:</strong> Foto di atas merupakan foto ilustratif kegiatan operasional HR. Anda dapat mengganti gambar-gambar ini kapan saja dengan foto autentik kegiatan Anda.
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== 8. KONTAK ==================== -->
+  <!-- ==================== 7. KONTAK ==================== -->
   <section id="kontak" class="py-16 bg-slate-900/60 border-b border-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       

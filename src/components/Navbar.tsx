@@ -15,7 +15,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenStandaloneModal, onOpenJob
     { label: 'Tentang', href: '#tentang' },
     { label: 'Pengalaman', href: '#pengalaman' },
     { label: 'Keahlian', href: '#keahlian' },
-    { label: 'Galeri Momen', href: '#galeri' },
     { label: 'Lowongan Kerja', href: '#lowongan' },
     { label: 'Kontak', href: '#kontak' },
   ];

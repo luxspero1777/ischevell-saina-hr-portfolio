@@ -10,7 +10,6 @@ import { AboutSection } from './components/AboutSection';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
 import { SkillsSection } from './components/SkillsSection';
 import { JobBoardSection } from './components/JobBoardSection';
-import { GallerySection } from './components/GallerySection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { JobDetailModal } from './components/JobDetailModal';
@@ -106,10 +105,7 @@ export default function App() {
           onOpenGeneralTalentPool={handleOpenGeneralTalentPool}
         />
 
-        {/* 6. Galeri Kegiatan & Momen Berkesan */}
-        <GallerySection />
-
-        {/* 7. Kontak & Konsultasi Organisasi */}
+        {/* 6. Kontak & Konsultasi Organisasi */}
         <ContactSection onSuccessToast={showToast} />
 
       </main>
